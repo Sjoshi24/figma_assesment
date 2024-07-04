@@ -1,0 +1,148 @@
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+
+.app {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  top: 50px;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  width:   Fixed (1,780px);
+  height:   Hug (81px);
+  left : 70px
+}
+
+.logo {
+  font-size: 64px;
+  font-family: Koh Santepheap;
+  font-weight: bold;
+  width: 700;
+  line-height: 81.2px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px
+}
+
+.menu span {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: Koh Santepheap;
+  cursor: pointer;
+  line-height: 45.7px;
+}
+
+.content {
+  text-align: center;
+  color: white;
+  z-index: 1 !important;
+  top: -100px !important;
+  margin-top: 20px;
+  font-size: 64px;
+  font-family: Koh Santepheap;
+  line-height: 81.25px;
+  font-weight: 400;
+letter-spacing: 20%;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin: 0;
+
+}
+
+.content h2 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.social-icons{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  gap:  50px;
+  left:  70px;
+  top: 989px;
+  height: Hug (40.74px);
+  width:   Hug (220px);
+}
+
+@keyframes slideDown{
+  to{
+    top:0;  }
+}
+
+
+@keyframes slideup{
+  to{
+    opacity: 1;  
+  
+    transform: translateY(0);
+  }
+}
+
+.carousal{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #181E25;
+
+}
+
+.crl-images{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.crl-image{
+  min-width: 33.35%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left-arrow .right-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow{
+  right: 10px;
+}
